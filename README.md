@@ -1,5 +1,14 @@
-# Aquaweb.css
 
-Welcome to **Aquaweb.css**, a customizable, class-light CSS library designed to give websites a retro-inspired aesthetic.
+Welcome to **Aquaweb.css**, a customizable, class-light CSS framework that enhances your website with a retro-inspired aesthetic.
 
-**Warning**:This library is in early development stage and is not suitable for production.
+**Warning**: This library is currently in its early development stages and may not be suitable for production environments.
+
+## How to Use
+
+To integrate Aquaweb.css into your project, add the following link to the `<head>` section of your HTML:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bartlomiej-aleksiejczyk/aquaweb.css/dist/aquaweb.min.css">
+```
+
+This link refers to the latest version hosted on the jsDelivr CDN, ensuring you are always using the most updated version of the library.

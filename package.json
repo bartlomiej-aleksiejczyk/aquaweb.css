@@ -4,7 +4,7 @@
   "description": "A customizable, class-light CSS library designed to give websites a retro-inspired aesthetic.",
   "main": "/dist/aquaweb.min.css",
   "scripts": {
-    "build": "node src/bundleCss.js src/css/aquaweb.css true"
+    "build": "node src/bundleCss.js src/css/aquaweb.css dist/aquaweb.min.css true"
   },
   "repository": {
     "type": "git",
