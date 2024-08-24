@@ -23,10 +23,10 @@ async function writeFile(filePath, content) {
 }
 
 async function bundleAndSave(inputPath, outputPath, minify) {
-  console.log(`Processing: ${inputPath}`);
-  const outputDir = path.dirname(outputPath);
-
   try {
+    console.log(`Processing: ${inputPath}`);
+    const outputDir = path.dirname(outputPath);
+
     let { code } = bundle({
       filename: inputPath,
       minify: minify,
@@ -35,8 +35,12 @@ async function bundleAndSave(inputPath, outputPath, minify) {
     await createDirectory(outputDir);
 
     await writeFile(outputPath, code);
+
+    console.log("All processing complete.");
+    process.exit(0);
   } catch (err) {
-    console.error("Failed to process CSS bundle:", err);
+    console.error("Failed to process:", err);
+    process.exit(1);
   }
 }
 
