@@ -2,6 +2,10 @@ import fs from "fs/promises";
 import path from "path";
 import { bundle } from "lightningcss";
 
+let targets = {
+  firefox: 128,
+};
+
 async function createDirectory(directory) {
   try {
     await fs.mkdir(directory, { recursive: true });
@@ -30,6 +34,7 @@ async function bundleAndSave(inputPath, outputPath, minify) {
     let { code } = bundle({
       filename: inputPath,
       minify: minify,
+      targets: targets,
     });
 
     await createDirectory(outputDir);
