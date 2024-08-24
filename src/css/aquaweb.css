@@ -8,6 +8,7 @@
 @import "class-components/group.css";
 @import "class-components/pill.css";
 @import "class-components/responsive-container.css";
+@import "class-components/navbar.css";
 
 /* Importing Native Components */
 @import "element-components/native-elements.css";
