@@ -1,0 +1,26 @@
+/* Responsive container:
+  Class made to achieve single column and responsive layout
+*/
+
+.responsive-container {
+  max-width: var(--max-width);
+  margin: 0 auto; /* Center the main content */
+  padding: 1rem;
+}
+
+@media (max-width: 1250px) {
+  .responsive-container {
+    max-width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .responsive-container {
+    max-width: 85%;
+  }
+}
+@media (max-width: 480px) {
+  .responsive-container {
+    max-width: 100%; /* Allow the main content to take even more width on very small screens */
+    padding: 0.5rem;
+  }
+}

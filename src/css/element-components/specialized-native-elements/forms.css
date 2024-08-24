@@ -1,0 +1,42 @@
+fieldset {
+  margin: 1rem 0;
+  border-radius: var(--border-radius-medium);
+  border: solid 2px var(--color-secondary-darker);
+}
+
+form {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--color-secondary);
+  box-shadow: 0 2px 5px var(--color-secondary);
+  border-radius: var(--border-radius-large);
+}
+
+input,
+button,
+select,
+textarea {
+  &:focus {
+    outline: 1px dashed var(--color-primary-lighter);
+  }
+  font-family: inherit;
+  padding: 0.5rem;
+  border: 2px solid var(--color-secondary-darker);
+  border-radius: var(--border-radius-medium);
+  margin: 0 auto 1rem;
+  width: 100%;
+  display: block;
+  justify-content: center;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0rem;
+  width: auto;
+}
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  background-color: var(--color-primary);
+  accent-color: var(--color-primary);
+}
