@@ -25,6 +25,7 @@ textarea {
   border-radius: var(--border-radius-medium);
   margin: 0 auto 1rem;
   width: 100%;
+  max-width: 100%;
   display: block;
   justify-content: center;
   background-color: var(--color-text-on-primary);
