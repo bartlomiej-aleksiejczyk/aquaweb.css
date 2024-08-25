@@ -27,6 +27,8 @@ textarea {
   width: 100%;
   display: block;
   justify-content: center;
+  background-color: var(--color-text-on-primary);
+  color: var(--color-text-primary);
 }
 
 input[type="checkbox"],
