@@ -1,4 +1,3 @@
-
 Welcome to **Aquaweb.css**, a customizable, class-light CSS framework that enhances your website with a retro-inspired aesthetic.
 
 **Warning**: This library is currently in its early development stages and may not be suitable for production environments.
@@ -8,7 +7,10 @@ Welcome to **Aquaweb.css**, a customizable, class-light CSS framework that enhan
 To integrate Aquaweb.css into your project, add the following link to the `<head>` section of your HTML:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bartlomiej-aleksiejczyk/aquaweb.css@0.0.3/dist/aquaweb.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/bartlomiej-aleksiejczyk/aquaweb.css@0.0.7/dist/aquaweb.min.css"
+/>
 ```
 
 This link refers to the latest version hosted on the jsDelivr CDN, ensuring you are always using the most updated version of the library.
