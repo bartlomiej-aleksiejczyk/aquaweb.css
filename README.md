@@ -9,7 +9,7 @@ To integrate Aquaweb.css into your project, add the following link to the `<head
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/bartlomiej-aleksiejczyk/aquaweb.css@0.0.10/dist/aquaweb.min.css"
+  href="https://cdn.jsdelivr.net/gh/bartlomiej-aleksiejczyk/aquaweb.css@0.1.13/dist/aquaweb.min.css"
 />
 ```
 
