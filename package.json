@@ -1,10 +1,11 @@
 {
   "name": "aquaweb.css",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A customizable, class-light CSS library designed to give websites a retro-inspired aesthetic.",
   "main": "/dist/aquaweb.min.css",
   "scripts": {
-    "build": "node src/build/bundleCss.js src/css/aquaweb.css dist/aquaweb.min.css true"
+    "build": "node src/build/bundleCss.js src/css/aquaweb.css dist/aquaweb.min.css true",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "license": "MIT",
   "type": "module",
   "devDependencies": {
+    "husky": "^9.1.5",
     "lightningcss": "^1.26.0"
   }
 }
