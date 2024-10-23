@@ -1,60 +1,62 @@
-Welcome to **Aquaweb.css**, a customizable, class-light CSS framework that enhances your website with a retro-inspired aesthetic.
+Welcome to **Aquaweb.css**, a customizable, lightweight CSS framework designed to give your website a retro-inspired aesthetic.
 
-**Warning**: This library is currently in its early development stages and may not be suitable for production environments.
+**Note**: Aquaweb.css is currently in the early stages of development and may not be suitable for production environments yet.
 
 ## How to Use
 
-To integrate Aquaweb.css into your project, add the following link to the `<head>` section of your HTML:
+To integrate Aquaweb.css into your project, add the following link to the `<head>` section of your HTML file:
 
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/bartlomiej-aleksiejczyk/aquaweb.css@0.1.13/dist/aquaweb.min.css"
+  href="https://cdn.jsdelivr.net/gh/bartlomiej-aleksiejczyk/aquaweb.css@0.3.0/dist/aquaweb.min.css"
 />
 ```
 
-This link refers to the latest version hosted on the jsDelivr CDN, ensuring you are always using the most updated version of the library.
+This link points to the latest stable version hosted on the jsDelivr CDN, ensuring you are always using the most up-to-date version of the library.
 
 ### Responsive Single Column Layout
 
-To achieve a responsive single column layout, use the `responsive-container` class.
+To achieve a responsive single-column layout, apply the `responsive-container` class to the desired container element.
 
 ## Development
 
-To contribute to Aquaweb.css, follow these steps:
+To devlop Aquaweb.css, follow these steps:
 
-1. Clone the repository:
+1. **Clone the repository**:
 
    ```bash
    git clone https://github.com/bartlomiej-aleksiejczyk/aquaweb.css.git
    cd aquaweb.css
    ```
 
-2. Install dependencies (if applicable):
+2. **Install dependencies**:
 
    ```bash
    npm install
    ```
 
-3. **Build the project**: The CSS files are bundled using a custom build script. To build the minified version of the framework, run the following command:
+3. **Make your changes**: Modify the necessary files to improve or extend the functionality of Aquaweb.css.
+
+4. **Build and release a new version**: After making changes, you can build and release a new version of Aquaweb.css by running the following command:
 
    ```bash
-   npm run build
+   npm run release <version-type> "<optional-comment>"
    ```
 
-   This will use the `bundleCss.js` script located in `src/build` to bundle and minify the CSS from `src/css/aquaweb.css` into `dist/aquaweb.min.css`.
+   The `releaseNewVersion.js` script manages versioning and prepares the project for release. Specify the type of version bump (`patch`, `minor`, or `major`), and optionally, add a comment to describe the update.
 
-4. **Release a new version**: To release a new version of Aquaweb.css, run:
+   Example:
 
    ```bash
-   npm run release
+   npm run release minor "Added new pill component"
    ```
 
-   This will trigger the `releaseNewVersion.js` script, which manages versioning and prepares the project for release.
+   This command will increment the minor version number and add the specified comment to the release notes.
 
-5. Make your changes, build the project, and open a pull request for review.
+## Scripts
 
-**Scripts**:
+Here are the main scripts used for building and releasing Aquaweb.css:
 
 ```json
 "scripts": {
@@ -62,3 +64,5 @@ To contribute to Aquaweb.css, follow these steps:
   "release": "node src/build/releaseNewVersion.js"
 }
 ```
+
+These scripts automate the bundling, minification, and version management processes.
