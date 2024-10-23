@@ -21,6 +21,6 @@
   "license": "MIT",
   "type": "module",
   "devDependencies": {
-    "lightningcss": "^1.26.0"
+    "lightningcss": "^1.27.0"
   }
 }
