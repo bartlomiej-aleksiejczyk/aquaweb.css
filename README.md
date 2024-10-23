@@ -14,3 +14,8 @@ To integrate Aquaweb.css into your project, add the following link to the `<head
 ```
 
 This link refers to the latest version hosted on the jsDelivr CDN, ensuring you are always using the most updated version of the library.
+
+### Responsive Single Column Layout
+
+To achive responsive single column layout use `responsive-container` class
+
