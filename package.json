@@ -1,6 +1,6 @@
 {
   "name": "aquaweb.css",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A customizable, class-light CSS library designed to give websites a retro-inspired aesthetic.",
   "main": "/dist/aquaweb.min.css",
   "scripts": {
