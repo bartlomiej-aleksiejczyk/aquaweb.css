@@ -14,7 +14,7 @@ import { promisify } from "util";
  * - Pushes the commit and tag to the remote repository.
  *
  * Usage:
- *   node script.js [versionType] [customMessage]
+ *   node <path/to/script.js> [versionType] [customMessage]
  *
  * Parameters:
  *   - versionType: "major", "minor", or "patch" (default is "patch").
