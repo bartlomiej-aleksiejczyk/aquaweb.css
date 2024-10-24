@@ -50,4 +50,18 @@
       width: 0.6rem;
     }
   }
+  /* Next three selectors are for elimination tree elments if there is only one element in the list */
+  > ul:first-of-type {
+    > li:only-child:after {
+      border: none;
+      content: none;
+    }
+    > li:only-child {
+      border: none;
+      content: none;
+    }
+    > li:only-child:before {
+      content: none;
+    }
+  }
 }
