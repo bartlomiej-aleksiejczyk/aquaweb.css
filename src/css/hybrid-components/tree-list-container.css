@@ -16,6 +16,8 @@
     color: var(--color-secondary-darker);
   }
 
+  /* Important: When using clickable elements in nested tree list set z-index to be on top */
+
   ul {
     padding: 0;
     margin: 0;

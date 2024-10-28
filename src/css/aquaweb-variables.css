@@ -41,6 +41,13 @@
   --max-width: 60%;
   --border-radius-medium: 3px;
   --border-radius-large: 5px;
+
+  /* ======================= */
+  /* Screen size breakpoints */
+  /* Do not work because CSS variables aren't supported in media queries. Need to wait till the spec update. */
+  /* --screen-xs: 480px;
+  --screen-sm: 768px;
+  --screen-md: 1200px; */
 }
 
 @media (prefers-color-scheme: dark) {
