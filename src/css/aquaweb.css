@@ -10,13 +10,11 @@
 @import "class-components/responsive-container.css";
 @import "class-components/navbar.css";
 @import "class-components/asci-image.css";
+@import "class-components/button.css";
+@import "class-components/table.css";
+@import "class-components/table-responsive.css";
+@import "class-components/tree-list-container.css";
+@import "class-components/breadcrumbs.css";
 
 /* Importing Native Components */
 @import "element-components/native-elements.css";
-
-/* Importing Hybrid Components */
-@import "hybrid-components/button.css";
-@import "hybrid-components/table.css";
-@import "hybrid-components/table-responsive.css";
-@import "hybrid-components/tree-list-container.css";
-@import "hybrid-components/breadcrumbs.css";
