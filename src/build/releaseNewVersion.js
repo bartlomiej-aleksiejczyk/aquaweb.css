@@ -37,9 +37,7 @@ async function releaseNewVersion(versionType = "patch", customMessage = "") {
   try {
     const validTypes = ["major", "minor", "patch"];
     if (!validTypes.includes(versionType)) {
-      throw new Error(
-        `Invalid version type specified: ${versionType}. Use major, minor, or patch.`
-      );
+      throw new Error(`Invalid version type specified: ${versionType}. Use major, minor, or patch.`);
     }
 
     await execShellCommand("npm run build");
@@ -47,11 +45,10 @@ async function releaseNewVersion(versionType = "patch", customMessage = "") {
 
     const packageJsonPath = path.join(process.cwd(), "package.json");
     const packageLockJsonPath = path.join(process.cwd(), "package-lock.json");
+    const readmePath = path.join(process.cwd(), "README.md");
 
     const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
-    const versionParts = packageJson.version
-      .split(".")
-      .map((x) => parseInt(x, 10));
+    const versionParts = packageJson.version.split(".").map((x) => parseInt(x, 10));
 
     switch (versionType) {
       case "major":
@@ -72,15 +69,13 @@ async function releaseNewVersion(versionType = "patch", customMessage = "") {
 
     fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
     if (fs.existsSync(packageLockJsonPath)) {
-      const packageLockJson = JSON.parse(
-        fs.readFileSync(packageLockJsonPath, "utf8")
-      );
+      const packageLockJson = JSON.parse(fs.readFileSync(packageLockJsonPath, "utf8"));
       packageLockJson.version = packageJson.version;
-      fs.writeFileSync(
-        packageLockJsonPath,
-        JSON.stringify(packageLockJson, null, 2)
-      );
+      fs.writeFileSync(packageLockJsonPath, JSON.stringify(packageLockJson, null, 2));
     }
+    const readmeContent = fs.readFileSync(readmePath, "utf8");
+    const updatedReadmeContent = readmeContent.replace(/aquaweb\.css@\d+\.\d+\.\d+/, `aquaweb.css@${newVersion}`);
+    fs.writeFileSync(readmePath, updatedReadmeContent);
 
     const commitMessage = `
     Release ${versionType} version v${packageJson.version}
