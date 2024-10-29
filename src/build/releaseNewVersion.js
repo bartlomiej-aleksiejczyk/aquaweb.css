@@ -9,6 +9,7 @@ import { promisify } from "util";
  * - It validates the version type (major, minor, or patch).
  * - Builds the project and stages the relevant CSS file.
  * - Increments the version number in `package.json` (and optionally `package-lock.json`).
+ * - Updates download link in documentation and readme.
  * - Commits the changes with a generated or custom message.
  * - Creates a Git tag for the new version.
  * - Pushes the commit and tag to the remote repository.
@@ -46,6 +47,7 @@ async function releaseNewVersion(versionType = "patch", customMessage = "") {
     const packageJsonPath = path.join(process.cwd(), "package.json");
     const packageLockJsonPath = path.join(process.cwd(), "package-lock.json");
     const readmePath = path.join(process.cwd(), "README.md");
+    const documentationPath = path.join(process.cwd(), "documentation/pages/", "index.html");
 
     const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
     const versionParts = packageJson.version.split(".").map((x) => parseInt(x, 10));
@@ -76,6 +78,10 @@ async function releaseNewVersion(versionType = "patch", customMessage = "") {
     const readmeContent = fs.readFileSync(readmePath, "utf8");
     const updatedReadmeContent = readmeContent.replace(/aquaweb\.css@\d+\.\d+\.\d+/, `aquaweb.css@${packageJson.version}`);
     fs.writeFileSync(readmePath, updatedReadmeContent);
+
+    const documentationContent = fs.readFileSync(documentationPath, "utf8");
+    const updatedDocumentationContent = documentationContent.replace(/aquaweb\.css@\d+\.\d+\.\d+/, `aquaweb.css@${packageJson.version}`);
+    fs.writeFileSync(readmePath, updatedDocumentationContent);
 
     const commitMessage = `
     Release ${versionType} version v${packageJson.version}
