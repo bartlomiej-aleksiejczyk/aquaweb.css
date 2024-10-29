@@ -1,4 +1,6 @@
-Welcome to **Aquaweb.css**, a customizable, lightweight CSS framework designed to give your website a retro-inspired aesthetic.
+# Aquaweb.css
+
+**Aquaweb.css** is a customizable, lightweight CSS framework designed to give a simple way to style HTML with an emphasis on a native HTML look. What's more, Aquaweb.css is fully responsive, just like the native styling of HTML
 
 **Note**: Aquaweb.css is currently in the early stages of development and may not be suitable for production environments yet.
 
@@ -12,9 +14,7 @@ To integrate Aquaweb.css into your project, add the following link to the `<head
 
 This link points to the latest stable version hosted on the jsDelivr CDN, ensuring you are always using the most up-to-date version of the library.
 
-### Responsive Single Column Layout
-
-To achieve a responsive single-column layout, apply the `responsive-container` class to the desired container element.
+More detailed instructions and usage examples can be found on the [documentation page](https://bartlomiej-aleksiejczyk.github.io/aquaweb.css/).
 
 ## Development
 
