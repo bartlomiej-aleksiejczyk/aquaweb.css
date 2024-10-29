@@ -80,7 +80,7 @@ async function releaseNewVersion(versionType = "patch", customMessage = "") {
     fs.writeFileSync(readmePath, updatedReadmeContent);
 
     const documentationContent = fs.readFileSync(documentationPath, "utf8");
-    const updatedDocumentationContent = documentationContent.replace(/aquaweb\.css@\d+\.\d+\.\d+/, `aquaweb.css@${packageJson.version}`);
+    const updatedDocumentationContent = documentationContent.replace(/aquaweb\.css@\d+\.\d+\.\d+/g, `aquaweb.css@${packageJson.version}`);
     fs.writeFileSync(documentationPath, updatedDocumentationContent);
 
     const commitMessage = `
