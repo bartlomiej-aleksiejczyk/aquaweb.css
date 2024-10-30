@@ -3,7 +3,7 @@
 */
 
 .responsive-container {
-  max-width: var(--max-width);
+  max-width: var(--max-container-width);
   margin: 0 auto; /* Center the main content */
   padding: 1rem;
   display: flex;

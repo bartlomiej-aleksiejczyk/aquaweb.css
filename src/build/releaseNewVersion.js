@@ -47,7 +47,7 @@ async function releaseNewVersion(versionType = "patch", customMessage = "") {
     const packageJsonPath = path.join(process.cwd(), "package.json");
     const packageLockJsonPath = path.join(process.cwd(), "package-lock.json");
     const readmePath = path.join(process.cwd(), "README.md");
-    const documentationPath = path.join(process.cwd(), "documentation/pages/", "index.html");
+    const documentationPath = path.join(process.cwd(), "docs/", "index.html");
 
     const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
     const versionParts = packageJson.version.split(".").map((x) => parseInt(x, 10));

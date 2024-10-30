@@ -9,7 +9,7 @@
 To integrate Aquaweb.css into your project, add the following link to the `<head>` section of your HTML file:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bartlomiej-aleksiejczyk/aquaweb.css@0.7.5/dist/aquaweb.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bartlomiej-aleksiejczyk/aquaweb.css@0.9.0/dist/aquaweb.min.css" />
 ```
 
 This link points to the latest stable version hosted on the jsDelivr CDN, ensuring you are always using the most up-to-date version of the library.
