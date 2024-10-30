@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import { promisify } from "util";
 
+// TODO: Add transactional behavior to this script
 /**
  * This script automates the process of releasing a new version of a project using Git and npm.
  *
