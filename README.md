@@ -1,30 +1,30 @@
-# Aquaweb.css
+# webbare.css
 
-**Aquaweb.css** is a customizable, lightweight CSS framework designed to give a simple way to style HTML with an emphasis on a native HTML look. What's more, Aquaweb.css is fully responsive, just like the native styling of HTML
+**webbare.css** is a customizable, lightweight CSS framework designed to give a simple way to style HTML with an emphasis on a native HTML look. What's more, webbare.css is fully responsive, just like the native styling of HTML
 
-**Note**: Aquaweb.css is currently in the early stages of development and may not be suitable for production environments yet.
+**Note**: webbare.css is currently in the early stages of development and may not be suitable for production environments yet.
 
 ## How to Use
 
-To integrate Aquaweb.css into your project, add the following link to the `<head>` section of your HTML file:
+To integrate webbare.css into your project, add the following link to the `<head>` section of your HTML file:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bartlomiej-aleksiejczyk/aquaweb.css@0.9.0/dist/aquaweb.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bartlomiej-aleksiejczyk/webbare.css@0.9.0/dist/webbare.min.css" />
 ```
 
 This link points to the latest stable version hosted on the jsDelivr CDN, ensuring you are always using the most up-to-date version of the library.
 
-More detailed instructions and usage examples can be found on the [documentation page](https://bartlomiej-aleksiejczyk.github.io/aquaweb.css/).
+More detailed instructions and usage examples can be found on the [documentation page](https://bartlomiej-aleksiejczyk.github.io/webbare.css/).
 
 ## Development
 
-To devlop Aquaweb.css, follow these steps:
+To devlop webbare.css, follow these steps:
 
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/bartlomiej-aleksiejczyk/aquaweb.css.git
-   cd aquaweb.css
+   git clone https://github.com/bartlomiej-aleksiejczyk/webbare.css.git
+   cd webbare.css
    ```
 
 2. **Install dependencies**:
@@ -33,9 +33,9 @@ To devlop Aquaweb.css, follow these steps:
    npm install
    ```
 
-3. **Make your changes**: Modify the necessary files to improve or extend the functionality of Aquaweb.css.
+3. **Make your changes**: Modify the necessary files to improve or extend the functionality of webbare.css.
 
-4. **Build and release a new version**: After making changes, you can build and release a new version of Aquaweb.css by running the following command:
+4. **Build and release a new version**: After making changes, you can build and release a new version of webbare.css by running the following command:
 
    ```bash
    npm run release <version-type> "<optional-comment>"
@@ -53,11 +53,11 @@ To devlop Aquaweb.css, follow these steps:
 
 ## Scripts
 
-Here are the main scripts used for building and releasing Aquaweb.css:
+Here are the main scripts used for building and releasing webbare.css:
 
 ```json
 "scripts": {
-  "build": "node src/build/bundleCss.js src/css/aquaweb.css dist/aquaweb.min.css true",
+  "build": "node src/build/bundleCss.js src/css/webbare.css dist/webbare.min.css true",
   "release": "node src/build/releaseNewVersion.js"
 }
 ```

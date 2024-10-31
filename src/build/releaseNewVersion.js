@@ -43,7 +43,7 @@ async function releaseNewVersion(versionType = "patch", customMessage = "") {
     }
 
     await execShellCommand("npm run build");
-    await execShellCommand("git add dist/aquaweb.min.css");
+    await execShellCommand("git add dist/webbare.min.css");
 
     const packageJsonPath = path.join(process.cwd(), "package.json");
     const packageLockJsonPath = path.join(process.cwd(), "package-lock.json");
@@ -77,11 +77,11 @@ async function releaseNewVersion(versionType = "patch", customMessage = "") {
       fs.writeFileSync(packageLockJsonPath, JSON.stringify(packageLockJson, null, 2));
     }
     const readmeContent = fs.readFileSync(readmePath, "utf8");
-    const updatedReadmeContent = readmeContent.replace(/aquaweb\.css@\d+\.\d+\.\d+/, `aquaweb.css@${packageJson.version}`);
+    const updatedReadmeContent = readmeContent.replace(/webbare\.css@\d+\.\d+\.\d+/, `webbare.css@${packageJson.version}`);
     fs.writeFileSync(readmePath, updatedReadmeContent);
 
     const documentationContent = fs.readFileSync(documentationPath, "utf8");
-    const updatedDocumentationContent = documentationContent.replace(/aquaweb\.css@\d+\.\d+\.\d+/g, `aquaweb.css@${packageJson.version}`);
+    const updatedDocumentationContent = documentationContent.replace(/webbare\.css@\d+\.\d+\.\d+/g, `webbare.css@${packageJson.version}`);
     fs.writeFileSync(documentationPath, updatedDocumentationContent);
 
     const commitMessage = `

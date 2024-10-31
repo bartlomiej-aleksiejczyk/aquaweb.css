@@ -1,6 +1,6 @@
 /* Importing Global and Reset Styles */
-@import "aquaweb-variables.css";
-@import "aquaweb-reset.css";
+@import "webbare-variables.css";
+@import "webbare-reset.css";
 
 /* Importing Class Components */
 @import "class-components/card.css";
