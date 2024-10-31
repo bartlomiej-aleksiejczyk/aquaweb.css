@@ -56,4 +56,6 @@
   font-family: "Oxanium";
   letter-spacing: 2px;
   margin: 0;
+  text-wrap: nowrap;
+  white-space: nowrap;
 }

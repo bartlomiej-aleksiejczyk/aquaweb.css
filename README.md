@@ -9,7 +9,7 @@
 To integrate markup-refine-lib.css into your project, add the following link to the `<head>` section of your HTML file:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bartlomiej-aleksiejczyk/markup-refine-lib.css@0.9.2/dist/markup-refine-lib.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bartlomiej-aleksiejczyk/markup-refine-lib.css@0.9.3/dist/markup-refine-lib.min.css" />
 ```
 
 This link points to the latest stable version hosted on the jsDelivr CDN, ensuring you are always using the most up-to-date version of the library.
