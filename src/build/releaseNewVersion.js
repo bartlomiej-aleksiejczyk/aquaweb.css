@@ -43,7 +43,7 @@ async function releaseNewVersion(versionType = "patch", customMessage = "") {
     }
 
     await execShellCommand("npm run build");
-    await execShellCommand("git add dist/webbare.min.css");
+    await execShellCommand("git add dist/markup-refine-lib.min.css");
 
     const packageJsonPath = path.join(process.cwd(), "package.json");
     const packageLockJsonPath = path.join(process.cwd(), "package-lock.json");
@@ -77,11 +77,11 @@ async function releaseNewVersion(versionType = "patch", customMessage = "") {
       fs.writeFileSync(packageLockJsonPath, JSON.stringify(packageLockJson, null, 2));
     }
     const readmeContent = fs.readFileSync(readmePath, "utf8");
-    const updatedReadmeContent = readmeContent.replace(/webbare\.css@\d+\.\d+\.\d+/, `webbare.css@${packageJson.version}`);
+    const updatedReadmeContent = readmeContent.replace(/markup-refine-lib\.css@\d+\.\d+\.\d+/, `markup-refine-lib.css@${packageJson.version}`);
     fs.writeFileSync(readmePath, updatedReadmeContent);
 
     const documentationContent = fs.readFileSync(documentationPath, "utf8");
-    const updatedDocumentationContent = documentationContent.replace(/webbare\.css@\d+\.\d+\.\d+/g, `webbare.css@${packageJson.version}`);
+    const updatedDocumentationContent = documentationContent.replace(/markup-refine-lib\.css@\d+\.\d+\.\d+/g, `markup-refine-lib.css@${packageJson.version}`);
     fs.writeFileSync(documentationPath, updatedDocumentationContent);
 
     const commitMessage = `
