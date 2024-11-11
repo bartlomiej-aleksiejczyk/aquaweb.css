@@ -1,6 +1,6 @@
 {
   "name": "markup-refine-lib.css",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "description": "A customizable, class-light CSS library designed to give websites a retro-inspired aesthetic.",
   "main": "/dist/markup-refine-lib.min.css",
   "scripts": {
