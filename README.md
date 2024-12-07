@@ -16,7 +16,7 @@ This link points to the latest stable version hosted on the jsDelivr CDN, ensuri
 
 More detailed instructions and usage examples can be found on the [documentation page](https://bartlomiej-aleksiejczyk.github.io/markup-refine-lib.css/).
 
-## Development
+## Local Development
 
 To devlop markup-refine-lib.css, follow these steps:
 
